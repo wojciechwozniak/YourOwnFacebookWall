@@ -12,6 +12,7 @@
 */
 
 
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
@@ -52,4 +53,5 @@ Route::get('/facebook/callback', function(SammyK\LaravelFacebookSdk\LaravelFaceb
     $user = App\User::createOrUpdateGraphNode($facebook_user);
     Auth::login($user,true);
     return redirect('/home');
+
 });
