@@ -14,6 +14,10 @@ class User extends Authenticatable
      *
      * @var array
      */
+    protected static $graph_node_field_aliases = [
+        'id' => 'facebook_id'
+    ];
+
     protected $fillable = [
         'name', 'email', 'password',
     ];
