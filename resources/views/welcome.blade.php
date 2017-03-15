@@ -85,10 +85,10 @@
             <div class="title m-b-md">
                 Laravel
             </div>
-            @if(!Auth::check())
-                <a id="btn-fblogin" href="{{$login_url}}" class="btn btn-primary btn-block">Log with Facebook! </a>
-            @else
+            @if(Auth::check())
                 <a id="btn-fblogin" href="{{url('/home')}}" class="btn btn-primary btn-block">Your wall </a>
+            @else
+                <a id="btn-fblogin" href="{{$login_url}}" class="btn btn-primary btn-block">Log with Facebook! </a>
             @endif
         </div>
     </div>
