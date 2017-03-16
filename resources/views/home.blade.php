@@ -19,8 +19,8 @@
                         <?php
                         $token = Session::get('fb_user_access_token');
                         $fb = new Facebook\Facebook([
-                            'app_id' => '1731780663779351',
-                            'app_secret' => '9a0995bc352b13beefbc422c3f6aecbb',
+                            'app_id' => 'your-appId',
+                            'app_secret' => 'your-appSecret',
                             'default_graph_version' => 'v2.2',
                         ]);
                         /*------------------------------------------------------------------*/
